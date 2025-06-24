@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+      <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+  <meta property="og:title" content="Gabung ke LinkHub – media sosial anonim tanpa login">
+  <meta property="og:description" content="Gabung ke LinkHub – media sosial online tanpa ribet! Buat postingan, ngobrol di grup, dan seru-seruan tanpa perlu login. Cukup buka, ekspresikan dirimu, dan nikmati kebebasan bersosial!">
+  <meta property="og:image" content="https://i.ibb.co/q34qY1mV/file-00000000caec622fb1dfcc208fe0b123.png">
+  <meta property="og:url" content="https://whatfun-baec7.web.app">
+  <meta property="og:type" content="website">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="WhatFun – Sosial Media Anonim">
+  <meta name="twitter:description" content="Gabung ke LinkHub – sosial media online tanpa perlu daftar atau login. Buat postingan, obrolan grup, dan ekspresikan dirimu dengan bebas!">
+  <meta name="twitter:image" content="https://i.ibb.co/q34qY1mV/file-00000000caec622fb1dfcc208fe0b123.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan Anda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="app-wrapper">
+    <div class="container">
+  <aside class="sidebar">
+      <div class="logo-animation">LinkHub</div>
+      <nav class="main-nav">
+          <ul>
+              <li><a href="#" class="active"><i class="fas fa-home"></i> Beranda</a></li>
+              <li><a href="#"><i class="fas fa-compass"></i> Jelajahi</a></li>
+              <li><a href="#"><i class="fas fa-video"></i> Reels Saya</a></li>
+              <li><a href="#"><i class="fas fa-bookmark"></i> Tersimpan</a></li>
+              <li><a href="#"><i class="fas fa-envelope"></i> Pesan</a></li>
+              <li><a href="#"><i class="fas fa-chart-line"></i> Analisis</a></li>
+              <li><a href="#"><i class="fas fa-cog"></i> Pengaturan</a></li>
+          </ul>
+      </nav>
+            <div class="profile-section">
+                <img src="https://via.placeholder.com/40" alt="Profil Pengguna" class="profile-pic">
+                <span id="user-display-name">Nama Pengguna</span>
+                <button id="logout-btn" class="icon-btn" title="Keluar"><i class="fas fa-sign-out-alt"></i></button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-bar-messages">
+                <div class="top-bar-left">
+                    <button class="back-btn" onclick="history.back()"><i class="fas fa-arrow-left"></i></button>
+                    <h2>Pesan</h2>
+                </div>
+                <div class="search-bar messages-search">
+                    <input type="text" placeholder="Cari percakapan...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="message-categories">
+                    <button class="category-btn active">Semua</button>
+                    <button class="category-btn">Belum Dibaca</button>
+                    <button class="category-btn">Archived</button>
+                </div>
+            </header>
+
+            <section class="messages-list-section">
+                <div id="conversations-list" class="conversations-list">
+                    <div style="text-align: center; padding: 20px;">Memuat percakapan...</div>
+                    </div>
+            </section>
+        </main>
+    </div>
+      <!-- Mobile bottom navigation -->
+  <nav class="mobile-nav-wrapper">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="homepage.html" class="mobile-nav-link active"><i class="fas fa-home"></i><span>Beranda</span></a></li>
+      <li class="mobile-nav-item"><a href="explore.html" class="mobile-nav-link"><i class="fas fa-compass"></i><span>Jelajahi</span></a></li>
+      <li class="mobile-nav-item"><a href="my-reels.html" class="mobile-nav-link"><i class="fas fa-video"></i><span>Reels</span></a></li>
+      <li class="mobile-nav-item"><a href="analytics.html" class="mobile-nav-link"><i class="fas fa-chart-line"></i><span>Analisis</span></a></li> <li class="mobile-nav-item"><a href="settings.html" class="mobile-nav-link"><i class="fas fa-cog"></i><span>Pengaturan</span></a></li>   </ul>
+  </nav>
+
+    <script type="module" src="./src/app.js"></script>
+</body>
+</html>

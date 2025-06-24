@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unggah Reel Baru</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="app-wrapper">
+  <aside class="sidebar">
+      <div class="logo-animation">LinkHub</div>
+      <nav class="main-nav">
+          <ul>
+              <li><a href="#" class="active"><i class="fas fa-home"></i> Beranda</a></li>
+              <li><a href="#"><i class="fas fa-compass"></i> Jelajahi</a></li>
+              <li><a href="#"><i class="fas fa-video"></i> Reels Saya</a></li>
+              <li><a href="#"><i class="fas fa-bookmark"></i> Tersimpan</a></li>
+              <li><a href="#"><i class="fas fa-envelope"></i> Pesan</a></li>
+              <li><a href="#"><i class="fas fa-chart-line"></i> Analisis</a></li>
+              <li><a href="#"><i class="fas fa-cog"></i> Pengaturan</a></li>
+          </ul>
+      </nav>
+        <div class="profile-section">
+            <img src="https://via.placeholder.com/45" alt="Profil Pengguna" class="profile-pic">
+            <span id="user-display-name">Loading...</span>
+            <button id="logout-btn" class="icon-btn" title="Keluar"><i class="fas fa-sign-out-alt"></i></button>
+        </div>
+    </aside>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="search-bar">
+                    <input type="text" placeholder="Cari reels...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="user-actions">
+                    <a href="#" class="notifications"><i class="fas fa-bell"></i></a>
+                    <a href="profile.html" class="profile-link-top-bar" id="top-bar-profile-link">
+                        <img src="https://via.placeholder.com/30" alt="Profil Pengguna" class="profile-pic-top-bar" id="top-bar-profile-pic">
+                    </a>
+                </div>
+            </header>
+
+        <section class="post-section card">
+            <h2>Unggah Reel Baru</h2>
+            <div id="upload-status" class="status-message"></div>
+
+            <div class="input-group">
+                <label for="reel-title">Judul Reel</label>
+                <input type="text" id="reel-title" placeholder="Masukkan judul reel Anda" required>
+            </div>
+
+            <div class="input-group">
+                <label for="reel-description">Deskripsi (Opsional)</label>
+                <textarea id="reel-description" placeholder="Ceritakan tentang reel ini..."></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="video-upload" class="file-upload-label">
+                    <i class="fas fa-video"></i> Pilih File Video
+                    <span id="video-file-name"></span>
+                </label>
+                <input type="file" id="video-upload" accept="video/mp4,video/quicktime" style="display: none;" required>
+            </div>
+
+            <div class="input-group">
+                <label for="content-type">Tipe Konten</label>
+                <select id="content-type" required>
+                    <option value="">Pilih Tipe</option>
+                    <option value="halaman">Halaman Internal</option>
+                    <option value="link">Tautan Eksternal</option>
+                </select>
+            </div>
+
+            <div id="page-details" class="input-group" style="display: none;">
+                <label for="page-name">Nama Halaman</label>
+                <input type="text" id="page-name" placeholder="Mis: Resep Nasi Goreng">
+                
+                <label for="category">Kategori</label>
+                <select id="category">
+                    <option value="">Pilih Kategori</option>
+                    <option value="makanan">Makanan</option>
+                    <option value="hotel">Hotel</option>
+                    <option value="resep">Resep</option>
+                    <option value="thrifting">Thrifting</option>
+                    <option value="traveling">Traveling</option>
+                    <option value="edukasi">Edukasi</option>
+                    <option value="kesehatan">Kesehatan</option>
+                    <option value="rumah">Rumah</option>
+                    <option value="mainan">Mainan</option>
+                    <option value="pakaian">Pakaian</option>
+                    <option value="electronic">Electronic</option>
+                    <option value="alat-alat">Alat-alat</option>
+                    <option value="dapur">Dapur</option>
+                    <option value="interior">Interior</option>
+                </select>
+            </div>
+
+            <div id="link-details" class="input-group" style="display: none;">
+                <label for="external-link">Tautan Produk/Informasi</label>
+                <input type="url" id="external-link" placeholder="Contoh: https://tokopedia.com/produk-abc">
+            </div>
+
+            <button id="post-reel-btn" class="primary-btn full-width">Posting Reel</button>
+        </section>
+    </main>
+      <!-- Mobile bottom navigation -->
+  <nav class="mobile-nav-wrapper">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="homepage.html" class="mobile-nav-link active"><i class="fas fa-home"></i><span>Beranda</span></a></li>
+      <li class="mobile-nav-item"><a href="explore.html" class="mobile-nav-link"><i class="fas fa-compass"></i><span>Jelajahi</span></a></li>
+      <li class="mobile-nav-item"><a href="my-reels.html" class="mobile-nav-link"><i class="fas fa-video"></i><span>Reels</span></a></li>
+      <li class="mobile-nav-item"><a href="analytics.html" class="mobile-nav-link"><i class="fas fa-chart-line"></i><span>Analisis</span></a></li> <li class="mobile-nav-item"><a href="settings.html" class="mobile-nav-link"><i class="fas fa-cog"></i><span>Pengaturan</span></a></li>   </ul>
+  </nav>
+
+
+    <script type="module" src="./src/app.js"></script>
+</body>
+</html>

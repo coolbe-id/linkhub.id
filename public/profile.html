@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="profile-page-title">Profil Pengguna</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="app-wrapper">
+    <div class="container">
+  <aside class="sidebar">
+      <div class="logo-animation">LinkHub</div>
+      <nav class="main-nav">
+          <ul>
+              <li><a href="#" class="active"><i class="fas fa-home"></i> Beranda</a></li>
+              <li><a href="#"><i class="fas fa-compass"></i> Jelajahi</a></li>
+              <li><a href="#"><i class="fas fa-video"></i> Reels Saya</a></li>
+              <li><a href="#"><i class="fas fa-bookmark"></i> Tersimpan</a></li>
+              <li><a href="#"><i class="fas fa-envelope"></i> Pesan</a></li>
+              <li><a href="#"><i class="fas fa-chart-line"></i> Analisis</a></li>
+              <li><a href="#"><i class="fas fa-cog"></i> Pengaturan</a></li>
+          </ul>
+      </nav>
+            <div class="profile-section">
+                <img src="https://via.placeholder.com/40" alt="Profil Pengguna" class="profile-pic">
+                <span id="user-display-name">Nama Pengguna</span>
+                <button id="logout-btn" class="icon-btn" title="Keluar"><i class="fas fa-sign-out-alt"></i></button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="search-bar">
+                    <input type="text" placeholder="Cari pengguna atau reels...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="user-actions">
+                    <button class="upload-btn" id="upload-reel-btn"><i class="fas fa-upload"></i> Unggah Reel</button>
+                    <a href="#" class="notifications"><i class="fas fa-bell"></i></a>
+                </div>
+            </header>
+
+            <section class="profile-section-content">
+                <div id="profile-header" class="profile-header">
+                    <img id="profile-pic-large" src="https://via.placeholder.com/150" alt="Foto Profil" class="profile-pic-large">
+                    <div class="profile-info">
+                        <h2 id="profile-username">Nama Pengguna</h2>
+                        <p id="profile-email">email@example.com</p>
+                        <p id="profile-bio">Bio pengguna akan ditampilkan di sini. Ini adalah tempat untuk memperkenalkan diri.</p>
+                        <div class="profile-stats">
+                            <span><strong id="reels-count">0</strong> Reels</span>
+                            <span><strong id="followers-count">0</strong> Pengikut</span>
+                            <span><strong id="following-count">0</strong> Mengikuti</span>
+                        </div>
+                        <div class="profile-actions">
+                            <button id="follow-btn" class="btn" style="display: none;">Ikuti</button>
+                            <button id="edit-profile-btn" class="btn" style="display: none;">Edit Profil</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-reels-grid">
+                    <h3>Reels <span id="reels-grid-username">Pengguna</span></h3>
+                    <div id="profile-reels-list" class="reels-grid-container">
+                        <div style="text-align: center; padding: 20px;">Memuat reels...</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+      <!-- Mobile bottom navigation -->
+  <nav class="mobile-nav-wrapper">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="homepage.html" class="mobile-nav-link active"><i class="fas fa-home"></i><span>Beranda</span></a></li>
+      <li class="mobile-nav-item"><a href="explore.html" class="mobile-nav-link"><i class="fas fa-compass"></i><span>Jelajahi</span></a></li>
+      <li class="mobile-nav-item"><a href="my-reels.html" class="mobile-nav-link"><i class="fas fa-video"></i><span>Reels</span></a></li>
+      <li class="mobile-nav-item"><a href="analytics.html" class="mobile-nav-link"><i class="fas fa-chart-line"></i><span>Analisis</span></a></li> <li class="mobile-nav-item"><a href="settings.html" class="mobile-nav-link"><i class="fas fa-cog"></i><span>Pengaturan</span></a></li>   </ul>
+  </nav>
+
+    <script type="module" src="./src/app.js"></script>
+</body>
+</html>

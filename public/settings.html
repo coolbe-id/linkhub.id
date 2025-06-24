@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengaturan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="app-wrapper">
+    <div class="container">
+  <aside class="sidebar">
+      <div class="logo-animation">LinkHub</div>
+      <nav class="main-nav">
+          <ul>
+              <li><a href="#" class="active"><i class="fas fa-home"></i> Beranda</a></li>
+              <li><a href="#"><i class="fas fa-compass"></i> Jelajahi</a></li>
+              <li><a href="#"><i class="fas fa-video"></i> Reels Saya</a></li>
+              <li><a href="#"><i class="fas fa-bookmark"></i> Tersimpan</a></li>
+              <li><a href="#"><i class="fas fa-envelope"></i> Pesan</a></li>
+              <li><a href="#"><i class="fas fa-chart-line"></i> Analisis</a></li>
+              <li><a href="#"><i class="fas fa-cog"></i> Pengaturan</a></li>
+          </ul>
+      </nav>
+            <div class="profile-section">
+                <img src="https://via.placeholder.com/40" alt="Profil Pengguna" class="profile-pic">
+                <span id="user-display-name">Nama Pengguna</span>
+                <button id="logout-btn" class="icon-btn" title="Keluar"><i class="fas fa-sign-out-alt"></i></button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="search-bar">
+                    <input type="text" placeholder="Cari pengaturan...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </header>
+
+            <section class="settings-section">
+                <h2>Pengaturan Akun</h2>
+                <div class="settings-options">
+                    <div class="setting-item">
+                        <h3>Informasi Profil</h3>
+                        <p>Kelola nama, email, dan informasi pribadi Anda.</p>
+                        <button class="btn">Edit Profil</button>
+                    </div>
+                    <div class="setting-item">
+                        <h3>Keamanan Akun</h3>
+                        <p>Ubah kata sandi atau atur otentikasi dua faktor.</p>
+                        <button class="btn">Kelola Keamanan</button>
+                    </div>
+                    <div class="setting-item">
+                        <h3>Preferensi Notifikasi</h3>
+                        <p>Pilih jenis notifikasi yang ingin Anda terima.</p>
+                        <button class="btn">Atur Notifikasi</button>
+                    </div>
+                    <div class="setting-item">
+                        <h3>Privasi Data</h3>
+                        <p>Atur bagaimana data Anda digunakan dan dibagikan.</p>
+                        <button class="btn">Kelola Privasi</button>
+                    </div>
+                    <div class="setting-item">
+                        <h3>Keluar dari Semua Perangkat</h3>
+                        <p>Amankan akun Anda dengan keluar dari semua sesi aktif.</p>
+                        <button class="btn btn-danger">Keluar Semua</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script type="module" src="./src/app.js"></script>
+</body>
+</html>
